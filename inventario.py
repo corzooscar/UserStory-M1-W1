@@ -30,5 +30,5 @@ while check != "stop":
     price = get_info(f"{GREEN}💵​ Enter the price of the product:\n➤{RESET}  ", float)
     quantity = get_info(f"{BLUE}🔢​ Enter the quantity of the product:\n➤{RESET}  ", int)
     total_cost = price * quantity
-
+    print(f"{YELLOW}Product: {name} {RESET}|{GREEN} Price: ${price} {RESET}|{BLUE} Quantity: {quantity} {RESET}|{MAGENTA} Total Cost: ${total_cost}{RESET}\n")
     check = "stop"
