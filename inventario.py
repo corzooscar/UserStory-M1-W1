@@ -34,7 +34,8 @@ WHITE   = "\033[37m"
 # Reusable input function — asks for a value, converts it to the given type (default: str),
 # and keeps asking until the user enters something valid
 def get_info(prompt, type=str):
-    while 777:                                                        # Infinite loop to keep asking until valid input is received, 777 is just a fun number to use here SINCE YOU HATE WHEN WE USE "TRUE", it works the same way though
+    im_not_true = None
+    while im_not_true != "stop":                                                        # Infinite loop to keep asking until valid input is received.
         try:
             return type(input(prompt))
             
